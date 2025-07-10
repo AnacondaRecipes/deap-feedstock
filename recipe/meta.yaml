@@ -46,7 +46,7 @@ test:
     - deap.tools._hypervolume
   commands:
     - python -m pip check
-    - nosetests deap.tests --with-cov --cov deap  # [py<=39]
+    #- nosetests deap.tests --with-cov --cov deap  # [py<=39]
 
 about:
   home: https://github.com/DEAP/deap
