@@ -21,7 +21,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - python                                 # [build_platform != target_platform]
-    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+    #- cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
 
   host:
@@ -35,8 +35,8 @@ requirements:
 
 test:
   requires:
-    - nose  # [py<=39]
-    - nose-cov  # [py<=39]
+    #- nose  # [py<=39]
+    #- nose-cov  # [py<=39]
     - python
     - pip
   imports:
